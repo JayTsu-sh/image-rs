@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#app {
+  height: 100%;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-feature-settings: 'cv11', 'ss01', 'ss03';
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-feature-settings: 'zero', 'tnum';
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  user-select: none;
+}
+
+/* Range input — match Stitch's slider style */
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+input[type='range']::-webkit-slider-runnable-track {
+  background: #dbe4e7;
+  height: 4px;
+  border-radius: 2px;
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  background: #ffffff;
+  border: 2px solid #4d44e3;
+  border-radius: 50%;
+  margin-top: -6px;
+}
+input[type='range']::-moz-range-track {
+  background: #dbe4e7;
+  height: 4px;
+  border-radius: 2px;
+}
+input[type='range']::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  background: #ffffff;
+  border: 2px solid #4d44e3;
+  border-radius: 50%;
+}

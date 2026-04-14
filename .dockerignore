@@ -1,0 +1,11 @@
+target
+.git
+.gitignore
+Dockerfile
+.dockerignore
+tests
+benches
+stitch
+web/node_modules
+web/dist
+*.md
